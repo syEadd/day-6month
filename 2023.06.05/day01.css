@@ -1,0 +1,182 @@
+*{
+  font-family: 'Cute Font', cursive;
+  margin: 0;
+  padding: 0;
+}
+header{
+  display: flex;
+  align-items: center; 
+  border-bottom: 3px solid sienna;
+  background-color: cornflowerblue;
+}
+.fox img{
+
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 70px;
+}
+.fox0{
+  margin: 0 auto;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center; 
+  
+}
+
+.box{
+  height: 700px;
+  background-image: url(/2023.06.05/ims/하렘의남자.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.com{
+  top: 0;
+  display: flex;
+  background-color: cadetblue;
+  position: sticky;
+  z-index: 10;
+}
+
+.com ul{
+  
+  list-style: none;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.com li{
+  color: violet;
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+
+.name{
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.all0{
+  display: flex;
+}
+
+
+.box0{
+  margin-top: 30px;
+  box-shadow: 4px 4px 5px gray;
+  margin-right: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 9px solid gray;
+  width: 300px;
+  height: 360px;
+}
+
+.box1 img{
+  height: 200px; 
+  object-fit:cover;
+  width: 100%;
+}
+
+.box2{
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+}
+
+.pig01{
+  border-top: 2px solid blue;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  background-color:antiquewhite;
+}
+
+.pig01 ul{
+  bottom: 0;
+  padding: 15px 0;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.pig01 a{
+  text-decoration: none;
+}
+
+.pig img{
+  
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.pig p{
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: cadetblue;
+}
+
+
+
+
+
+
+
+strong{
+  color: blue;
+}
+.pig01{
+  margin-top: 40px;
+  border-top: 3px solid sienna;
+  
+}
+
+.naver{
+  color: blueviolet;
+  background-color: aquamarine;
+}
+
+.yoo{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  color: hotpink;
+}
+
+.yoo a{
+  display: flex;
+  color: tomato;
+  text-decoration: none;
+}
+
+.ggp{
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.ggp1{
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+}
+.a11{
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px 0;
+}
+.ggp1 li:last-child {
+  color: yellow;
+}
