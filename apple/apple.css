@@ -1,0 +1,33 @@
+h1{
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 20px;
+  border: 10px solid fuchsia;
+  margin: 50px auto;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+.all{
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+p{
+background-color: darkorange;
+border: 2px solid cornflowerblue;
+border-radius: 15px;
+height: 40px;
+padding-top: 15px;
+width: 300px;
+margin-left: 40px;
+color: blue;
+}
+.fix{
+  width: 200px;
+  text-align: center;
+  border: 3px solid darkgoldenrod;
+  margin-bottom: 20px;
+  margin-left: ;
+}

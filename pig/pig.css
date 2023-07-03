@@ -1,0 +1,47 @@
+.pig{
+  background-color: chocolate;
+  border-radius: 20px;
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  height: 400px;
+  padding-top: 30px;
+  color: blue;
+  margin-top: 50px;
+}
+.eamil{
+  background-color: burlywood;
+  border: 3px solid darkcyan;
+  border-radius: 30px;
+  width: 300px;
+  text-align: center;
+  height: 120px;
+  padding-top: 10px;
+  color: blue;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+ul{
+  margin-bottom: 10px;
+  background-color: blueviolet;
+  border: 2px solid forestgreen;
+  width: 80px;
+  padding-right: 30px;
+  color: antiquewhite;
+  border-radius: 30px;
+  margin: 0 auto;
+  height: 30px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+h1{
+  background-color: aquamarine;
+  border: 2px solid darkorange;
+  color: blueviolet;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  height: 50px;
+}

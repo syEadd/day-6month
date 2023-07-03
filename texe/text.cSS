@@ -1,0 +1,57 @@
+h1{
+  color: blueviolet;
+  background-color: chartreuse;
+  border-radius: 15px;
+  width: 500px;
+  margin: 45px auto;
+  text-align: center;
+  height: 100px;
+  padding-top: 40px;
+}
+
+.bad{
+  
+  text-align: center;
+  margin: 0px auto;
+  width: 500px;
+  padding-top: 15px;
+  
+}
+body{
+  background-color: antiquewhite;
+
+}
+spen{
+  font-weight: bold;
+  border: 2px solid darkblue;
+}
+p {
+background-color: aquamarine;
+border: 3px solid pink;
+height: 40px;
+padding-top: 15px;
+border-radius: 20px;
+height: 40px;
+padding-top: 15px;
+border-radius: 20px;
+
+}
+.name{
+  color: chocolate;
+  width: 500px;
+  text-align: center;
+}
+.time{
+  height: 500px;
+}
+i{
+  font-style: italic;
+}
+.dag{
+  font-style: italic;
+  margin-top: 100px;
+}
+.one{
+  margin-top: 100px;
+  color: aqua;
+}

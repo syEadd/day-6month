@@ -110,6 +110,7 @@ header{
   list-style: none;
 }
 
+
 .pig01 a{
   text-decoration: none;
 }
@@ -127,7 +128,14 @@ header{
   color: cadetblue;
 }
 
-
+.fox0 ul{
+  font-size: 20px;
+  color: yellow;
+  justify-content: space-between;
+  width: 10%;
+  list-style: none;
+  display: flex;
+}
 
 
 

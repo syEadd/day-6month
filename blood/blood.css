@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+}
+.pig{
+  width: 400px;
+  border: 3px solid forestgreen;
+  margin: 50px auto;
+  text-align: center;
+  height: 400px;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+body{
+  background-color: wheat;
+}
+h1{
+  color: coral;
+  background-color: cornflowerblue;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 30px;
+  text-align: center;
+  height: 100px;
+  padding-top: 40px;
+  margin-top: 100px;
+}
+spen{
+  font-weight: bold;
+  border: 2px solid saddlebrown;
+  
+}
+.email{
+  background-color: #fff;
+  border: 2px solid darkgoldenrod;
+  margin-top: 50px;
+  border-radius: 10pt ; 
+  height: 40px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  padding-top: 20px;
+ 
+}
+.egg{
+  height: 400px;
+}
+p{
+  padding-top: 15px;
+}

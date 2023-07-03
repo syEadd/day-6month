@@ -1,0 +1,26 @@
+body{
+  background-color: plum;
+}
+
+.fox{
+  width: 500px;
+  text-align : center;
+  margin: 0 auto;
+}
+h1{
+  background-color: aqua;
+  border: 2px solid darkcyan;
+  color: #000;
+  border-radius: 5px;
+}
+p{
+  color: blue;
+  background-color: yellow;
+  border-color: #000;
+  height: 50px;
+  border-radius: 5px;
+  padding-top: 15px;
+}
+spen{
+  font-weight: bold;
+}
