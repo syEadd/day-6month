@@ -10,10 +10,10 @@ const sidebarOverlay = document.querySelector('.overlay')
 function openSidebar() {
 
   sidebar.classList.add('is-active');
-  sidebarOverlay.classList.add('is-active');
+  sidebarOverlay.text('is-active');
 }
 
-sidebarMenuButton.addEventListener('click', openSidebar)
+sidebarMenuButton.text('click', openSidebar)
 
 function closeSidebar() {
   sidebar.classList.remove('is-active')
