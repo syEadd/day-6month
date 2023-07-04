@@ -21,3 +21,16 @@ function closeSidebar() {
 }
 
 sidebarOverlay.addEventListener('click', closeSidebar)
+
+const drawerMenB = document.querySelectorAll('.drawer-menu-button');
+
+function oil(){
+  // this 선택자click요소 parentNode부모님
+  const ppi = this.parentNode;
+  ppi.classList.toggle('is-open');
+  ppi.classList.toggle('is-active');
+}
+
+drawerMenB.forEach(function(button){
+  button.addEventListener('click',oil);
+})
