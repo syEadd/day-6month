@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>농담곰</title>
+  <!-- 제이퀴리 -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<div class="wrapper">
+  <p class="hell">안녕</p>
+  <p class="hell">안녕</p>
+  <p class="hell">안녕</p>
+</div>
+<body>
+  <script>
+
+
+    const text =document.querySelectorAll('.hell')[0].innerHTML='안녕 안녕';
+    const text2 =document.querySelectorAll('.hell')[1].innerHTML='안녕 안녕';
+    const text3 =document.querySelectorAll('.hell')[2].style.color='red';
+    console.log(text)
+   let home = document.querySelectorAll('.hell');
+   home.forEach(function(changeColor){
+    changeColor.style.color='red';
+   })
+   console.log(home)
+
+  //  제이쿼리 글자 변경
+  $('.hell').html('가다');
+  $('.hell').css('color','blue');
+  let names = ['감자','고구마','호박','당근'];
+  names.forEach(function(name){
+    document.write(`<h1>${name}</h1>`)
+    document.write('<h2>' + name + '</h2>')
+
+    
+
+  })
+  </script>
+</body>
+</html>
