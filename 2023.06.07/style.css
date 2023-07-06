@@ -36,6 +36,7 @@ cursor: pointer;
   opacity: 0.75;
 }
 .dropdowm-ment{
+  display: none;
   position: absolute;
   right: 0;
   width: 200px;
@@ -46,7 +47,7 @@ cursor: pointer;
 .dropdowm-ment:hover{
   transform: translateY(2px);
 }
-.dropdowm-ment:active{
+.dropdowm-ment.active{
   display: block;
 }
 .dropdowm-ment::before{
@@ -79,7 +80,7 @@ padding: 10px 0;
 border-top: 1px solid gray;
 }
 .dropdowm-ment ul li a{
-display: inline-block;
+display:block;
   padding: 8px 16px;
 }
 .dropdowm-ment ul li a:hover{
