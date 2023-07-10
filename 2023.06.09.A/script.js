@@ -21,15 +21,14 @@ buttons.forEach(function(btn, index){
     // 기능 2 ↑↑
 
     buttons.forEach(function(go){
-      if(go !== btn && go.classList.contains('att')){
+      if(go != btn && go.classList.contains('att')){
         go.classList.remove('att');
       }else{
-       
   
       }
     })
 
-    // const fpd = btn.document.querySelector('att').style.backgroundColor = 'red';
-  //  const dpd = document.querySelector('button').style.backgroundColor = 'red';
+
   })
-})
+ 
+  })
