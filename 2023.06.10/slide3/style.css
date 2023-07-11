@@ -18,8 +18,9 @@ a{
   height: 100%;
 }
 .gnb > li{
+  position: relative;
   width: 25%;
-  text-align: center;  
+  text-align: center;
 }
 .gnb > li > a{
   display: block;
@@ -34,8 +35,16 @@ a{
   transition: background-color 300ms ease-in-out;
 }
 .sub {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  /* display: none; */
+  position: absolute;
+  width: 100%;
   
+}
+.sub.acc{
+  max-height: 270px;
+  transition:max-height 300ma ease-in-out ;
 }
 .sub li a{
   display: block;
