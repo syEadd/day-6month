@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.visually-hidden{
+  display: none;
+}
+.gnb{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.gnb > li{
+  width: 25%;
+  text-align: center;  
+}
+.gnb > li > a{
+  display: block;
+  background-color: blue;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+.gnb > li > a:hover,
+.gnb > li > a.on{
+  background-color: red;
+  transition: background-color 300ms ease-in-out;
+}
+.sub {
+  display: none;
+  
+}
+.sub li a{
+  display: block;
+  background-color: gray;
+  padding: 1rem;
+  transition: background-color 300ms ease-in-out;
+
+}
+.sub li a:hover,
+.sub li a.on{
+  background-color: hotpink;
+}
