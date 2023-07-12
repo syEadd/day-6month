@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+a{
+  text-decoration: none;
+}
+.text{
+  
+  position: relative;
+  border: 3px solid gray;
+  display: flex;
+  width: 50%;
+  text-align: center;
+  margin-top: 50px;
+  z-index: 100;
+  background-color: #fff;
+}
+.text > ul > a {
+  font-weight: 700;
+  border: 3px solid hotpink;
+}
+.text > ul > a:hover{
+  color: blue;
+  
+}
+
+
+
+.text1{
+  padding-top: 10px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.text1 li{
+  overflow: hidden;
+  max-height: 0;
+  /* display: none; */
+  position: absolute;
+  width: 20%;
+
+
+ 
+  z-index: 2;
+  padding: 0.5rem;
+  list-style: none;
+  box-shadow: 1px 2px 3px gray;
+}
+/* .text1 li:hover,
+.text1 li.Aox{
+ 
+  background-color: aqua;
+  transition: 300ms ease-in-out;
+} */
+
+
+.text2 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+}
+.text2 li {
+  padding: 0.5rem;
+  list-style: none;
+  overflow: hidden;
+}
+.box{
+  display: flex;
+ position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  justify-content: space-between;
+  
+}
+.text5{
+  display: flex;
+}
+.text5 li{
+  list-style: none;
+}
+.text5 img{
+  z-index: 1;
+  box-shadow: 3px 3px 3px black;
+  margin-top: -200px;
+  box-shadow: 3px 2px 3px black;
+  width: 100vw;
+  height: 410px;
+  transform: translateX(0) ;
+  position: absolute;
+  bottom: 180px;
+  
+}
+.text6 ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 1rem;
+  bottom: 180px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  opacity: 0.8;
+  background-color: black;
+}
+.text6 ul li{
+  padding: 1rem;
+}
