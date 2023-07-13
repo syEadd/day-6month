@@ -65,8 +65,14 @@ padding: 16px;
   position: absolute;
   transform: translateX(-50%);
   background-color: #fff;
-  /* display: none; */
+ overflow: hidden;
+  max-height: 0;
+  overflow: hidden;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sub.active{
+  max-height:270px;
 }
 
 .sub::before{
@@ -138,4 +144,138 @@ padding: 16px;
 }
 .slide-but li:last-child::after{
   display: none;
+}
+footer{
+  margin-top: 60px;
+  color: #aaa;
+}
+
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  background-color: #113676;
+  padding:  0 40px;
+  color: #aaa;
+
+}
+
+.foot-left{
+  display: flex;
+}
+.foot-left li a {
+  display: block;
+  padding: 20px;
+  font-size: 18px;
+  border-left: 1px solid gray;
+}
+.foot-left li:last-child a {
+border-right: 1px solid gray ;
+}
+
+.foot-left li:nth-child(2) a{
+  color: #fff;
+  font-weight: 700;
+}
+.foot-right{
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+  align-items: center;
+}
+.number{
+  font-size: 24px;
+  color: #fff;
+}
+.tiem{
+  font-size: 12px;
+}
+
+.foot-bottom{
+  padding: 50px 40px;
+  background-color: #2d2d30;
+}
+.foot-bottom img {
+  opacity: .5;
+}
+
+.foot-bottom ul{
+  
+  display: flex;
+  margin-top: 30px;
+}
+.foot-bottom ul li::before{
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #666;
+  transform: rotate(30deg);
+  margin: 0 10px ;
+}
+.foot-bottom ul  li:first-child::before{
+  content: none;
+}
+.foot-bottom ul{
+  display: flex;
+  margin-top:30px ;
+}
+
+
+@media screen and (max-width :1200px) {
+  .lg-hidden{
+    display: block;
+  }
+
+
+  .gub-log{
+    /* display: none; */
+    padding: 20px 30px;
+  }
+
+  .gnd-main{
+  
+    padding: 10px 30px;
+  }
+
+  .sidebar-btn{
+    border: none;
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 200px ;
+    height: 100vh;
+    padding: 20px 30px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+    transform:translateX(-200px) ;
+
+  }
+  .sidebar.acct{
+    transform: translateX(0);
+  }
+
+  .sidebar-btn{
+    float: right;
+    border: none;
+    font-size: 24px;
+    background-color: transparent;
+  }
+  .sidebar-list{
+    margin-top: 20px;
+    clear: right;
+  }
+  .sidebar-item a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .sidebar-item:first-child a{
+    border-top: 1px solid #ccc;
+  }
 }
