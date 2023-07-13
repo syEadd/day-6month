@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+li{
+  list-style: none;
+}
+.lg-hidden{
+  display: none;
+}
+.global-heaer{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color:rgba(225, 225, 225, 0.8);
+  width: 100%;
+  box-shadow:  0 5px 12px rgba(0, 0, 0, 0.3);
+  
+}
+.gub-log{
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+.gub-log li a{
+  margin-right: 16px;
+  font-size: 15px;
+}
+
+.gub-log li a:last-child a {
+  margin-right: 0;
+}
+.gub-log li a i{
+  font-size: 4px;
+}
+.gnd-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.gub-main-list{
+  display: flex;
+}
+.gub-main-item{
+  position: relative;
+}
+.gub-main-item a.active,
+.gub-main-item a:hover{
+  color: hotpink;
+}
+.gub-main-item a{
+display: block;
+text-align: center;
+padding: 16px;
+}
+.sub{
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  background-color: #fff;
+  /* display: none; */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sub::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #113676;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* //////////// */
+.slide-wrqpper{
+  overflow: hidden;
+  position: relative;
+}
+.slide-list{
+  display: flex;
+  width: 300vw;
+  height: 600px;
+}
+
+.slide-list li{
+  width: 100vw;
+  height: 100%;
+}
+.slide-list img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-but{
+  position: absolute;
+  bottom: 0;  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 25px 0;
+  border-top: 1px solid #ccc ;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+.slide-but li{
+  color: #fff;
+  margin-right: 20px;
+  
+  
+}
+.slide-but li:last-child{
+  margin-right: 0;
+}
+.slide-but li:hover,
+.slide-but li.acc{
+  color: #ffE111;
+}
+.slide-but li::after{
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  margin-left: 20px;
+  background-color: #ccc;
+
+}
+.slide-but li:last-child::after{
+  display: none;
+}
