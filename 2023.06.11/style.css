@@ -4,9 +4,7 @@
   box-sizing: border-box;
   
 }
-a{
-  text-decoration: none;
-}
+
 .text{
   
   position: relative;
@@ -68,46 +66,57 @@ a{
   list-style: none;
   overflow: hidden;
 }
-.box{
+.text3{
   display: flex;
- position: relative;
   width: 90%;
-  margin: auto;
-  margin-top: 80px;
   justify-content: space-between;
   
 }
-.text5{
-  display: flex;
-}
-.text5 li{
+li{
   list-style: none;
 }
-.text5 img{
-  z-index: 1;
-  box-shadow: 3px 3px 3px black;
-  margin-top: -200px;
-  box-shadow: 3px 2px 3px black;
-  width: 100vw;
-  height: 410px;
-  transform: translateX(0) ;
-  position: absolute;
-  bottom: 180px;
-  
+a{
+  text-decoration: none;
+  color: #000;
 }
-.text6 ul{
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 1rem;
-  bottom: 180px;
-  left: 0;
-  position: absolute;
+
+.text4{
   width: 100%;
-  z-index: 3;
-  opacity: 0.8;
-  background-color: black;
+  display: flex;
 }
-.text6 ul li{
+.text4 > li{
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+.text4 > li > a{
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  font-weight: 700;
+  background-color: aqua;
+  transition: background-color 300ms ease-in-out;
+
+}
+.text4 > li > a:hover,
+.text4 > li > a.on{
+ background-color: blue;
+}
+ .text5{
+  width: 100%;
+position: absolute;
+overflow: hidden;
+top: 60px;
+max-height: 0;
+transition: max-height 500ms ease-in-out; */
+
+} 
+.text5.acc{
+  max-height: 270px;
+}
+.text5 li {
+  text-align: center;
+  background-color: brown;
+  
   padding: 1rem;
 }
