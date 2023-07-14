@@ -10,13 +10,21 @@
 
 
 // JS
+const box = document.querySelector('.box1')
 
-let gubltems = document.querySelectorAll('gub-main-item');
-
+let gubltems = document.querySelectorAll('.gub-main-item');
 gubltems.forEach(function(item){
-let subMend = item.querySelector('.sub');
+  let subMend = item.querySelector('.sub');
+  
+  item.addEventListener('mouseover', function(){
+    subMend.classList.add('active');
+    this.querySelector('a').classList.add('on')
+    this.querySelector('.box1').classList.add('bob')
+  })
+  item.addEventListener('mouseleave',function(){
+    subMend.classList.remove('active')
+    this.querySelector('a').classList.remove('on')
+    this.querySelector('.box1').classList.remove('bob')
+  })
 
-item.addEventListener('.mouseover',function(){
-  subMend.classList.add('active');
-})
 })

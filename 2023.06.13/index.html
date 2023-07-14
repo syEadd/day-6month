@@ -9,23 +9,26 @@
   <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
  <!-- 폰트 -->
-  <script src="https://kit.fontawesome.com/a19afa0290.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/a19afa0290.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <div class="wapper">
     <header class="global-heaer">
       <ul class="gub-log">
-        <li><a href="">로그인</a></li>
-        <li><a href="">회원가입</a></li>
-        <li><a href="">아이디 / 비밀번호</a></li>
+        <li><a href=""><i class="fa-solid fa-right-to-bracket"></i>로그인</a></li>
+        <li><a href=""><i class="fa-solid fa-user"></i>회원가입</a></li>
+        <li><a href=""><i class="fa-solid fa-key"></i>아이디 / 비밀번호</a></li>
       </ul>
       <div class="gnd-main">
+
         <h1><a href=""><img src="./logo.svg" alt="로고"></a></h1>
         
-        <nav>
-          <ul class="gub-main-list">
+      <nav>
+          <ul class="gub-main-list lg-only">
             <li class="gub-main-item"><a href="">포럼소개</a>
+              <div class="box1"></div>
               <ul class="sub">
                 <li><a href="">취지문</a></li>
                 <li><a href="">주요사업</a></li>
@@ -36,6 +39,7 @@
             </li>
             
             <li class="gub-main-item"><a href="">포럼공지</a>
+              <div class="box1"></div>
               <ul class="sub">
                 <li><a href="">주요사업</a></li>
                 <li><a href="">포럼일정 및 참가</a></li>
@@ -43,6 +47,7 @@
             </li>
             
             <li class="gub-main-item"><a href="">포럼활동</a>
+              <div class="box1"></div>
               <ul class="sub">
                 <li><a href="">포럼자료</a></li>
                 <li><a href="">포토갤러리</a></li>
@@ -51,12 +56,14 @@
             
             
             <li class="gub-main-item"><a href="">정보마당</a>
+              <div class="box1 "></div>
               <ul class="sub">
                 <li><a href="">e-News</a></li>
               </ul>
             </li>
             
             <li class="gub-main-item"><a href="">고객센터</a>
+              <div class="box1"></div>
               <ul class="sub">
                 <li><a href="">공지사항</a></li>
                 <li><a href="">자주하는 질문</a></li>
@@ -64,7 +71,6 @@
               </ul>
             </li>
             
-            </header>
             
           </ul>
         </nav>
@@ -72,7 +78,9 @@
         <button type="button" class="gnd-open-btn lg-hidden">
           <img src="./img3.jpeg" alt="오픈 메뉴">
         </button>
+      </div>
         
+      </header>
         <main>
           <section>
             <div class="slide-wrqpper">
@@ -123,7 +131,7 @@
           
         </footer>
         
-        <aside class="sidebar lg-hidden">
+        <aside class="sidebar acct lg-hidden">
           <button type="button" class="sidebar-btn">X</button>
           <ul class="sidebar-list">
             <li class="sidebar-item"><a href="">포럼소개</a></li>

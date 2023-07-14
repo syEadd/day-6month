@@ -50,7 +50,7 @@ li{
 .gub-main-item{
   position: relative;
 }
-.gub-main-item a.active,
+.gub-main-item a.on,
 .gub-main-item a:hover{
   color: hotpink;
 }
@@ -60,22 +60,40 @@ text-align: center;
 padding: 16px;
 }
 .sub{
+  overflow: hidden;
   width: 100%;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
   background-color: #fff;
- overflow: hidden;
   max-height: 0;
-  overflow: hidden;
+  /* display: none; */
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+
+
+}
+.box1{
+  display: none;
+  z-index: 800;
+  position: absolute;
+  content: '';
+  bottom:  -10%;
+  
+  transform: translateY(-50%);
+  left: 50%;
+  background-color: #113676;
+  width: 5px;
+  height: 5px;
+}
+.box1.bob{
+  display: flex;
 }
 
 .sub.active{
   max-height:270px;
 }
 
-.sub::before{
+/* .sub::before{
   position: absolute;
   content: '';
   width: 10px;
@@ -84,7 +102,7 @@ padding: 16px;
   top: -5px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 
 
@@ -145,7 +163,7 @@ padding: 16px;
 .slide-but li:last-child::after{
   display: none;
 }
-footer{
+footer {
   margin-top: 60px;
   color: #aaa;
 }
@@ -213,7 +231,7 @@ border-right: 1px solid gray ;
   transform: rotate(30deg);
   margin: 0 10px ;
 }
-.foot-bottom ul  li:first-child::before{
+.foot-bottom ul li:first-child::before{
   content: none;
 }
 .foot-bottom ul{
@@ -227,9 +245,12 @@ border-right: 1px solid gray ;
     display: block;
   }
 
+  .lg-only {
+    display: none;
+  }
+
 
   .gub-log{
-    /* display: none; */
     padding: 20px 30px;
   }
 
@@ -238,8 +259,9 @@ border-right: 1px solid gray ;
     padding: 10px 30px;
   }
 
-  .sidebar-btn{
-    border: none;
+
+  .gnd-open-btn{
+    display: none;
   }
 
   .sidebar{
@@ -247,18 +269,22 @@ border-right: 1px solid gray ;
     top: 0;
     left: 0;
     z-index: 200;
-    width: 200px ;
+    width: 200px;
     height: 100vh;
     padding: 20px 30px;
-    background-color: #fff;
     text-align: center;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
-    transform:translateX(-200px) ;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    transform: translateX(-200px);
+    transition: transform 500ms ease-in-out;
+  
+    
 
   }
   .sidebar.acct{
     transform: translateX(0);
   }
+
 
   .sidebar-btn{
     float: right;
@@ -266,6 +292,8 @@ border-right: 1px solid gray ;
     font-size: 24px;
     background-color: transparent;
   }
+
+ 
   .sidebar-list{
     margin-top: 20px;
     clear: right;
@@ -278,4 +306,7 @@ border-right: 1px solid gray ;
   .sidebar-item:first-child a{
     border-top: 1px solid #ccc;
   }
+
+
+ 
 }
