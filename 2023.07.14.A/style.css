@@ -31,11 +31,11 @@ width: 150px;
 }
 .main-menu li a:hover,
 .main-menu li a.on{
-  background-color: #ddd;
+  background-color: hotpink;
 }
 
 .submenu-wrapper{
-  /* display: none; */
+  display: none;
   background-color: cornflowerblue;
 }
 
@@ -55,5 +55,5 @@ width: 150px;
 }
 
 .sub li a:hover{
-  background-color: #ddd;
+  background-color: firebrick;
 }

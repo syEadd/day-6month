@@ -238,6 +238,66 @@ border-right: 1px solid gray ;
   display: flex;
   margin-top:30px ;
 }
+.boxUp{
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 800;
+  width: 400px;
+  height: 85vh;
+  background-color: #fff;
+  
+}
+.boxUp.on{
+  display: none;
+}
+.boxUp img{
+  width: 100%;
+  height: 60%;
+}
+.boxUp > h2{
+  text-align: center;
+  color: blue;
+  clear: both;
+}
+.boxUp > button{
+  padding: 10px;
+  float: right;
+  font-size: 20px;
+  border: transparent;
+  background-color: transparent;
+}
+.gobox > p{
+  padding: 15px 30px;
+  text-align: center;
+  margin: 15px auto ;
+  width: 80%;
+  height: 40%;
+  background-color: green;
+  color: #fff;
+  font-weight: 700;
+  
+}
+
+
+.hot{
+  display: flex;
+margin-left: 10px;
+}
+.jop{
+  border-top:3px solid gray ;
+  height: 100%;
+  background-color: #666;
+  opacity: 0.8;
+ 
+}
+
+.gog p{
+  padding-left:8px; 
+
+}
 
 
 @media screen and (max-width :1200px) {
