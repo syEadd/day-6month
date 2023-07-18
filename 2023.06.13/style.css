@@ -10,6 +10,11 @@ a{
 li{
   list-style: none;
 }
+
+button{
+  border: none;
+  background-color: transparent;
+}
 .lg-hidden{
   display: none;
 }
@@ -298,7 +303,61 @@ margin-left: 10px;
   padding-left:8px; 
 
 }
+/* 테스트용 */
 
+.popup{
+  position: absolute;
+  top: 10%;
+  background-color: #FFF;
+  border: 3px solid darkblue;
+  z-index: 200;
+  left: 50%;
+  width: 480px;
+  transform: translateX(-50%);
+}
+.popup-top{
+  padding: 30px;
+
+}
+.close-btn{
+  text-align: right;
+}
+.close-btn button{
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+}
+.popup h2{
+  margin-top: 20px;
+  color: darkblue;
+}
+.popup img{
+  margin-top: 20px;
+}
+.content-btn{
+  margin-top: 20px;
+  text-align: center;
+}
+.content-btn button{
+  padding: 14px 80px;
+  background-color: green;
+  color:#FFF ;
+  transition: background-color 300ms;
+}
+.content-btn button:hover{
+  cursor: pointer;
+  background-color: gold;
+}
+
+.pop-ckeck{
+  padding: 12px 20px;
+  border-top: 1px solid #ccc;
+  background-color: #ccc;
+}
+.pop-ckeck span {
+  color: black;
+  font-size: 14px;
+}
 
 @media screen and (max-width :1200px) {
   .lg-hidden{
