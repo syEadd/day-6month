@@ -38,7 +38,7 @@ setTimeout(function(){
 document.querySelector('.com').classList.add('is-active')
 }, 5000)
 
-
+// 주의 ↓↓↓↓↓
 
 function go2 (box1, box2){
   return Math.round(Math.random() * (box1-box2 +1)+box2)
