@@ -10,3 +10,13 @@
 .count.is-active{
   display: none;
 }
+
+
+
+.com{
+  padding: 20px;
+  background-color: rgba(50, 40, 80, 60);
+}
+.com.is-active{
+  display: none;
+}
