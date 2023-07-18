@@ -47,13 +47,21 @@ function go2 (box1, box2){
 }
 
 
+var box07 = 0
 
-
-let color100 = setInterval(function(all,index){
+let color100 = setInterval(function(index){
  
   let r = go2(0,255)
   let g = go2(0,255)
   let b = go2(0,255)
 document.querySelector('.com').style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+
+if(box07<5){
+box07++;
+
+}
+
+
+document.querySelector('.com span').innerHTML = box07;
 },1000)
 
