@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fox li:nth-child(2){
+  
+border: 3px solid hotpink;
+
+}
+.wapper{
+ 
+  width: 90%;
+  position: relative; 
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.fox{
+  
+  border: 3px solid goldenrod;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.fox p{
+  color: black;
+  font-weight: 700;
+  
+}
+
+.ball{
+  margin: 0 auto;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+.ball img{
+  width: 200px;
+  height: 200px;
+}
+.ball p{
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  text-align: center;
+  padding-top: 50%;
+
+}
+
+/* ///이미지 1 버튼 작용 ↓ */
+
+.egg1.om{
+  
+  display: block;
+}
+
+
+.egg1{
+ display: none;
+  border-radius: 20px;
+  border: 2px solid grey ;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%) ;
+  position: absolute;
+  left: 30%;
+  height: 80%;
+  width: 50%;
+}
+.egg1 img{
+  width: 100%;
+}
+.btm{
+  float: right;
+  border: none;
+  background-color: transparent;
+}
+.vs{
+  float: left;
+}
+.hot a,button{
+  font-weight: 700;
+  font-size: 20px;
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.hot:first-child a{
+  border-bottom: 3px solid green;
+  
+}
+

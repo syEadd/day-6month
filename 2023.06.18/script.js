@@ -34,9 +34,9 @@ let rdfd = setInterval(function(){
 
 
 setTimeout(function(){
-  // clearInterval(color100)
+  clearInterval(color100)
 document.querySelector('.com').classList.add('is-active')
-}, 5000)
+}, 11000)
 
 // 주의 ↓↓↓↓↓
 
@@ -54,14 +54,20 @@ let color100 = setInterval(function(index){
   let r = go2(0,255)
   let g = go2(0,255)
   let b = go2(0,255)
-document.querySelector('.com').style.backgroundColor = 'rgb('+r+','+g+','+b+')';
-
-if(box07<5){
-box07++;
-
+  document.querySelector('.com').style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+  document.querySelector('.com span').innerHTML = box07;
+  
+  if(box07 < 10){
+    box07++;
+    
+    
+  }else{
+    if(box07 == 10){
+      
+      document.querySelector('.com').style.animationName = 'boxwall'
+    }
 }
 
 
-document.querySelector('.com span').innerHTML = box07;
 },1000)
 
