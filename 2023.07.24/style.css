@@ -18,15 +18,42 @@ nav{
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
+  transition: transform 300ms ease-in-out ;
 }
 
 .box{
-  height: 30000px;
+  height: 3000px;
   background-color: aqua;
 }
 img{
   width: 80px;
 }
 button i{
-  
+  font-size: 24px;
+}
+.lorem{
+  width: 500px;
+  height: 300px;
+  overflow: scroll;
+  margin: 30px auto;
+}
+.fox{
+  position: fixed;
+  top: 106px;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 20px;
+  background-color: gold;
+}
+
+.fox1{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: transform 500ms ease-in-out;
+}
+.fox1:hover{
+  transform: translateX(-100px);
+  background-color: blueviolet;
 }
