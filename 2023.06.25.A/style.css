@@ -1,0 +1,38 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.wrapper{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  top: 100px;
+  left: 400px;
+  display: none;
+  padding: 16px;
+  border-radius: 20px;
+  border: 3px solid gray;
+  width: 600px;
+  height: 320px;
+}
+.overlay.box{
+  display: block;
+}
+.boxup{
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.boxup.on{
+  visibility: visible;
+  opacity: 0.5;
+}
