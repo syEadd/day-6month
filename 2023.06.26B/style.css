@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.boxup{
+  /* border: 3px solid hotpink; */
+  display: flex;
+  margin: 100px 0 0 35%;
+ width: 40%;
+ justify-content: space-between;
+ align-items: center;
+  
+}
+.boxup img{
+  width: 60%;
+  height: 60%;
+}
+#nation{
+  width: 100px;
+  height: 30px;
+}
+.box1{
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 480px;
+  display: flex;
+}
+.box1:last-child{
+
+}
+.box1 > p{
+  
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 10px;
+}
