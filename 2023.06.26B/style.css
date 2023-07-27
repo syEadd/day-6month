@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.btn1 > img.on{
+  background: url('./pc_check_on_l_24.png');
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 0px;
+}
 
 
 .boxup{
@@ -15,6 +22,22 @@
  align-items: center;
   
 }
+.box1 img.om{
+  background: url('./pc_check_on_l_24.png');
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 0px;
+}
+
+/* .box1:hover img{
+  background: url('./pc_check_on_l_24.png');
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 0px;
+  
+} */
 .boxup img{
   width: 60%;
   height: 60%;
@@ -24,18 +47,108 @@
   height: 30px;
 }
 .box1{
-  padding-top: 30px;
-  margin: 0 auto;
+  padding-top: 50px;
+ margin-left: 33%;
   width: 480px;
   display: flex;
 }
-.box1:last-child{
 
-}
+
+/* .btn1:hover img{
+background: url('./pc_check_on_l_24.png');
+cursor: pointer;
+background-repeat: no-repeat;
+background-size: 20px;
+background-position: 0px;
+padding: 10px 10px 10px 0;
+} */
 .box1 > p{
-  
   text-decoration: underline;
   font-weight: 700;
   font-size: 18px;
   padding: 0 10px;
+}
+.box2{
+  margin-left: 33%;
+ margin-top: 80px;
+
+}
+.p1{
+  font-size: 20px;
+  font-weight: 700;
+}
+.p{
+  color: green;
+  font-size: 12px;
+  padding-left: 8px;
+}
+.box3{
+  border: 3px solid gray;
+  border-radius: 10px;
+  max-width: 460px;
+  color: gray;
+  overflow-y: scroll;
+  height: 200px;
+ padding: 20px;
+}
+.bo4{
+  overflow: hidden;
+}
+
+.btn1 img{
+  padding: 10px 10px 10px 0 ;
+}
+
+.btn1{
+  display: flex;
+  align-items: center;
+}
+
+.p2{
+  color: gray;
+  font-size: 12px;
+  padding-left: 8px;
+}
+.box4{
+  margin-left: 33%;
+ margin-top: 80px;
+}
+/* 빨간 경고 */
+.p3{
+  display: none;
+  color: red;
+max-width: 480px;
+margin-left: 33%;
+margin-top: 30px;
+}
+#btn1,
+#btn2{
+width: 150px;
+height: 80px;
+background-color: green;
+color: #FFF;
+font-size: 20px;
+border-radius: 10px;
+border: none;
+font-weight: 700;
+}
+
+.btn2{
+  margin-left: 33%;
+}
+.btn3{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 460px;
+
+}
+
+.btn4{
+  margin-top: 10px;
+  max-width: 460px;
+}
+
+.box1 img{
+  border: 3px solid fuchsia;
 }
