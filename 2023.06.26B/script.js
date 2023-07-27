@@ -10,10 +10,27 @@ allbtn.addEventListener('click',function(all){
   btn.forEach(function(e){
     e.classList.toggle('on');
     
-    if(2 <= btn.length){
-      allbtn.classList.add('om')
-      e.classList.add('on');
-    }
-    
+ 
   })
 })
+///////////////미저장
+
+let i = 2
+let a = btn.length
+console.log(i <= btn.length)
+btn.forEach(function(all){
+  all.addEventListener('click',function(){
+    if(this.on && this.on == 1 ){
+      
+      this.classList.add('on') 
+     // btn.classList.remove('on')
+    
+
+    }else{
+      allbtn.classList.add('om')
+    
+    }
+    this.on = !this.on
+    
+  })
+ })
