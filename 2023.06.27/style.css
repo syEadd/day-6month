@@ -71,11 +71,11 @@ label p {
 .agree .checkbox-img {
   width: 20px;
   height: 20px;
-  background-image: url('./images/pc_chcek_off_s_20.png');
+  background-image: url('./pc_chcek_off_s_20.png');
 }
 
 .agree .checkbox-img.checked {
-  background-image: url('./images/pc_chcek_on_s_20.png');
+  background-image: url('./pc_check_on_l_24.png');
 }
 
 .agree label p {
