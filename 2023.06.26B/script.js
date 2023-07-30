@@ -47,36 +47,92 @@ allbtn.addEventListener('click',function(all){
 
 //  TEXT 1번 용 ↓ ↓ ↓
 
-  btn.forEach(function(all){
+  // btn.forEach(function(all){
 
-  all.addEventListener('click',function(){
+  // all.addEventListener('click',function(){
     
-    this.classList.toggle('on')
+  //   this.classList.toggle('on')
     
-    let hot44 = document.querySelectorAll('.on').length;
-    console.log(hot44)
+  //   let hot44 = document.querySelectorAll('.on').length;
+  //   console.log(hot44)
   
-    console.log(hot44)
-    if(3 == hot44){
+  //   console.log(hot44)
+  //   if(3 == hot44){
 
-      allbtn.classList.add('om');
-      document.querySelector('.btn4').classList.remove('one');
+  //     allbtn.classList.add('om');
+  //     document.querySelector('.btn4').classList.remove('one');
 
-    }else if(0 < hot44){
-     // 다 체크 되게 만듬!!
-        allbtn.classList.remove('om')
-       document.querySelector('.btn4').classList.add('one')
-    }else{
+  //   }else if(0 < hot44){
+  //    // 다 체크 되게 만듬!!
+  //       allbtn.classList.remove('om')
+  //      document.querySelector('.btn4').classList.add('one')
+  //   }else{
       
-      allbtn.classList.remove('om')
-    }
+  //     allbtn.classList.remove('om')
+  //   }
 
     
-    })
+  //   })
         
-  })
+  // })
 
- // TEXT 2번 용 ↓ ↓ ↓
+ // TEXT for if 1번 용 ↓ ↓ ↓
 
 
+ 
+//  btn.forEach(function(all){
+   
+//    all.addEventListener('click',function(){
+    
+//      this.classList.toggle('on')
+    
+//     let toto = document.querySelectorAll('.on');
+//      for(i = 1; i <= toto.length ;i++ ){
+//         if(i == 3){
+    
+//           allbtn.classList.add('om');
+//           document.querySelector('.btn4').classList.remove('one');
+    
+//            break
+//         }else{
+
+//           allbtn.classList.remove('om')
+
+//         }
+//      }
+  
+     
+     
+//     })
+    
+//   })
+
+  // TEXT for if 2번 용 ↓ ↓ ↓
+
+  btn.forEach(function(all){
+   
+    all.addEventListener('click',function(){
+     
+      this.classList.toggle('on')
+     
+     let toto = document.querySelectorAll('.on');
+      for(i = 0; i < toto.length ;i++ ){
+         if(i == 2){
+     
+           allbtn.classList.add('om');
+           document.querySelector('.btn4').classList.remove('one');
+     
+            break
+         }else{
+ 
+           allbtn.classList.remove('om')
+ 
+         }
+      }
+   
+      
+      
+     })
+     
+   })
   
