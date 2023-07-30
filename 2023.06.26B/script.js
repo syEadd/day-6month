@@ -117,6 +117,8 @@ allbtn.addEventListener('click',function(all){
      
      let toto = document.querySelectorAll('.on');
       for(i = 0; i < toto.length ;i++ ){
+        // i은 0기준  i: 0.1.2  개수에 ++증감식 
+        // 추가적으로 for문으로 개수로 변화했음 !!
          if(i == 2){
      
            allbtn.classList.add('om');
