@@ -45,7 +45,7 @@ allbtn.addEventListener('click',function(all){
 //   })
 
 
-//  TEXT 용 ↓ ↓ ↓
+//  TEXT 1번 용 ↓ ↓ ↓
 
   btn.forEach(function(all){
 
@@ -75,4 +75,8 @@ allbtn.addEventListener('click',function(all){
     })
         
   })
+
+ // TEXT 2번 용 ↓ ↓ ↓
+
+
   
