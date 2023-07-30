@@ -17,13 +17,44 @@ allbtn.addEventListener('click',function(all){
 
 
 
-btn.forEach(function(all){
+// btn.forEach(function(all){
+
+//   all.addEventListener('click',function(){
+    
+//     this.classList.toggle('on')
+    
+//     let hot44 = document.querySelectorAll('.on').length;
+  
+//     console.log(hot44)
+//     if(3 == hot44){
+
+//       allbtn.classList.add('om');
+//       document.querySelector('.btn4').classList.remove('one');
+
+//     }else if(2 == hot44){
+//         allbtn.classList.remove('om')
+//        document.querySelector('.btn4').classList.add('one')
+//     }else{
+      
+//       allbtn.classList.remove('om')
+//     }
+
+    
+//     })
+        
+//   })
+
+
+//  TEXT 용 ↓ ↓ ↓
+
+  btn.forEach(function(all){
 
   all.addEventListener('click',function(){
     
     this.classList.toggle('on')
     
     let hot44 = document.querySelectorAll('.on').length;
+    console.log(hot44)
   
     console.log(hot44)
     if(3 == hot44){
@@ -31,7 +62,8 @@ btn.forEach(function(all){
       allbtn.classList.add('om');
       document.querySelector('.btn4').classList.remove('one');
 
-    }else if(2 == hot44){
+    }else if(0 < hot44){
+     // 다 체크 되게 만듬!!
         allbtn.classList.remove('om')
        document.querySelector('.btn4').classList.add('one')
     }else{
@@ -43,3 +75,4 @@ btn.forEach(function(all){
     })
         
   })
+  
