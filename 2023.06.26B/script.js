@@ -72,6 +72,7 @@ allbtn.addEventListener('click',function(all){
     }
 
     
+    
     })
         
   })
