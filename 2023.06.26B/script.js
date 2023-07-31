@@ -47,22 +47,51 @@ allbtn.addEventListener('click',function(all){
 
 //  TEXT 1번 용 ↓ ↓ ↓
 
+  btn.forEach(function(all){
+
+  all.addEventListener('click',function(){
+    
+    this.classList.toggle('on')
+    
+    let hot44 = document.querySelectorAll('.on').length;
+    console.log(hot44)
+  
+    console.log(hot44)
+    if(3 == hot44){
+
+      allbtn.classList.add('om');
+      document.querySelector('.btn4').classList.remove('one');
+
+    }else if(0 < hot44){
+     // 다 체크 되게 만듬!!
+        allbtn.classList.remove('om')
+       document.querySelector('.btn4').classList.add('one')
+    }else{
+      
+      allbtn.classList.remove('om')
+    }
+
+    
+    })
+        
+  })
+
+// TEXT 2번 용 ↓ ↓ ↓
+
   // btn.forEach(function(all){
 
   // all.addEventListener('click',function(){
     
   //   this.classList.toggle('on')
     
-  //   let hot44 = document.querySelectorAll('.on').length;
-  //   console.log(hot44)
+  //   let hot44 = document.querySelectorAll('.on');
   
-  //   console.log(hot44)
-  //   if(3 == hot44){
+  //   if(3 == hot44.length){
 
   //     allbtn.classList.add('om');
   //     document.querySelector('.btn4').classList.remove('one');
 
-  //   }else if(0 < hot44){
+  //   }else if(0 < hot44.length){
   //    // 다 체크 되게 만듬!!
   //       allbtn.classList.remove('om')
   //      document.querySelector('.btn4').classList.add('one')
@@ -75,6 +104,8 @@ allbtn.addEventListener('click',function(all){
   //   })
         
   // })
+
+
 
  // TEXT for if 1번 용 ↓ ↓ ↓
 
@@ -109,32 +140,32 @@ allbtn.addEventListener('click',function(all){
 
   // TEXT for if 2번 용 ↓ ↓ ↓
 
-  btn.forEach(function(all){
+  // btn.forEach(function(all){
    
-    all.addEventListener('click',function(){
+  //   all.addEventListener('click',function(){
      
-      this.classList.toggle('on')
+  //     this.classList.toggle('on')
      
-     let toto = document.querySelectorAll('.on');
-      for(i = 0; i < toto.length ;i++ ){
-        // i은 0기준  i: 0.1.2  개수에 ++증감식 
-        // 추가적으로 for문으로 개수로 변화했음 !!
-         if(i == 2){
+  //    let toto = document.querySelectorAll('.on');
+  //     for(i = 0; i < toto.length ;i++ ){
+  //       // i은 0기준  i: 0.1.2  개수에 ++증감식 
+  //       // 추가적으로 for문으로 개수로 변화했음 !!
+  //        if(i == 2){
      
-           allbtn.classList.add('om');
-           document.querySelector('.btn4').classList.remove('one');
+  //          allbtn.classList.add('om');
+  //          document.querySelector('.btn4').classList.remove('one');
      
-            break
-         }else{
+  //           break
+  //        }else{
  
-           allbtn.classList.remove('om')
+  //          allbtn.classList.remove('om')
  
-         }
-      }
+  //        }
+  //     }
    
       
       
-     })
+  //    })
      
-   })
+  //  })
   
