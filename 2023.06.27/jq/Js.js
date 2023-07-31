@@ -36,7 +36,7 @@ agreeAll.forEach(function(agree){
 
     if(this.querySelector('.checkbox-img').classList.contains('checked')) {
       agree.querySelector('.checkbox-img').classList.add('checked');
-      agree.querySelector('input[type="checkbox"]').checked = true;
+     agree.querySelector('input[type="checkbox"]').checked = true;
     } else {
       agree.querySelector('.checkbox-img').classList.remove('checked');
       agree.querySelector('input[type="checkbox"]').checked = false;
