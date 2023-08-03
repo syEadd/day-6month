@@ -6,18 +6,28 @@ const color_1 = document.querySelector('.name0 .p0');
 console.log(oil0)
 box1.addEventListener('click',function(e){
   //  e.preventDefault()
-  let boxup = /^[0-9]{2}$/
-  if(boxup.test == '2'){
+  let dan = box1.value;
+  
+  
+  let boxup = /^[0-9]{4}$/
+  
+  console.log(boxup.test('1203'))
 
-    oil2.classList.add('p1')
-    
-  }else{
-     oil0.classList.add('p1')
-
+  if(dan.length == 0){
+    oil2.classList.remove('p1')
+    oil3.classList.remove('p1')
+    oil0.classList.add('p1')
+  }else if(boxup.test(dan)){
+    oil0.classList.remove('p1')
+    oil3.classList.remove('p1')
+    oil2.classList.add('p2')
+   }else{
+     oil0.classList.remove('p1')
+     oil2.classList.remove('p1')
+     oil3.classList.add('p1')
    }
 })
 console.log(box1)
 
 
-console.log(boxup.test('0'))
 

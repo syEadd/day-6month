@@ -34,7 +34,7 @@ margin: 0 auto;
   cursor: pointer;
 }
 .inputbox input{
-  width: 80%;
+  width: 70%;
   height: 100%;
   border: none;
   outline: none;
@@ -42,7 +42,7 @@ margin: 0 auto;
   font-size: 18px;
 }
 .inputbox div{
-  width: 20%;
+  width: 30%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -69,7 +69,7 @@ margin: 0 auto;
   outline: none;
 }
 .gender input[type="radio"]{
-  display: none;
+  /* display: none; */
 }
 .gender .inputbox{
   display: flex;
