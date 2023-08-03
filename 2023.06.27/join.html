@@ -10,11 +10,9 @@
 
 </head>
 <style>
-  .name8 input {
-    width: 200px;
-    height: 200px;
-    background-color: cadetblue;
-  }
+ 
+
+
 </style>
 <body>
   <div class="wapper">
@@ -28,9 +26,9 @@
       <input type="text" class="text">
       <p class="mom">@naver.com</p>
     </label>
-      <p class="on p0">필수 정보입니다.</p>
-      <p class="on p2">멋진 아이디네요!</p>
-      <p class="on p3"> 5~20자의 영문소문자만 사용가능합니다.</p>
+      <p class="on ">필수 정보입니다.</p>
+      <p class="on ">멋진 아이디네요!</p>
+      <p class="on "> 5~20자의 영문소문자만 사용가능합니다.</p>
     </div>
     
     
@@ -71,36 +69,53 @@
     </label>
   </div>
 
-  <div class="name7">
+  
+  <div class="name9">
+    <label>
+      <h2>생년월일</h2>
+      <div class="name7">
+        <input type="text"  placeholder="년 4자">
+        <select name="" id="" >
+        <option value="" selected disabled hidden>월</option>
+       <!-- selected ='false' 자동값으로  disabled => 비활성화  결론: 월(거짓)에서 움직이지 않아요  -->
+       <!-- selected ='false' 자동값으로  disabled => 비활성화  결론: 월(거짓)에서 움직이지 않고 hidden 숨김  -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <input type="text"  placeholder="일">
+    </div>
+    </label>
+  </div>
 
-    <label >
-      <input type="text"  placeholder="년 4자">
-  <select name="" id="" >
-    <option value="" selected disabled hidden>월</option>
-    <option value="">1</option>
-    <option value="">2</option>
-    <option value="">3</option>
-    <option value="">4</option>
-    <option value="">5</option>
-    <option value="">6</option>
-    <option value="">7</option>
-    <option value="">8</option>
-    <option value="">9</option>
-    <option value="">10</option>
-    <option value="">11</option>
-    <option value="">12</option>
-  </select>
-  <input type="text"  placeholder="일">
-</label>
-<p class="on p4">태어난 년도 4자리를 정확하게 입력하세요.</p>
-</div>
+  <p class="on p4">태어난 년도 4자리를 정확하게 입력하세요.</p>
 
+
+<!-- 성별 버튼 -->
 <div class="name8">
   <label for="">
-    <p>성별</p>
-    <input type="button" placeholder="여자">
+    <h2>성별</h2>
+    <div class="hom1">
+      <input id="hom0" class="oil-1" type="button" value="여자" >
+      <input id="hom0" class="oil-2" type="button" value="남자">
+      <input id="hom0" class="oil-3" type="button" value="선택않함">
+    </div>
   </label>
 </div>
+
+<div class="name9">
+
+</div>
+
 </div>
 <script src="./2폐이지 네이버/box.js"></script>
 </body>

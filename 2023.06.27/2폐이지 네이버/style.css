@@ -9,6 +9,19 @@
   margin: 0 auto;
   
 }
+.img1{
+  border: 2px solid gold;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+.img1 img{
+  width: 70%;
+  height: 50%;
+}
 .name1{
 
   position: relative;
@@ -78,7 +91,9 @@
  
  .on{
    display: none;
+   
  }
+ 
  .p2{
    color: #03C75A;
  }
@@ -87,9 +102,9 @@
  .p3.btn{
   display: block;
  }
- .p1,
- .p0,
- .p3{
+ /* 글자 넣기 JS*/
+ .p1{
+ display: block;
  color: red;
  }
 
@@ -102,3 +117,60 @@ input[type='text']:focus {
 }
 
 
+/* 성별 버튼 */
+.name8 p{
+
+}
+
+.name8{
+  width: 100%;
+  height: 100%;
+  
+}
+.hom1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.name8 input{
+  background-color: #fff;
+  width: 30%;
+  height: 50px;
+  border: 2px solid #03C75A;
+  text-align: center;
+  font-size: 24px;
+  font-weight:700;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.name8 input.oil-1:hover{
+ background-color: #03C75A;
+ border: 2px solid #000;
+ color: #fff;
+}
+.name8 input.oil-2:hover{
+  background-color: #03C75A;
+ border: 2px solid #000;
+ color: #fff;
+}
+.name8 input.oil-3:hover{
+  background-color: #03C75A;
+ border: 2px solid #000;
+ color: #fff;
+}
+
+/* 생년월일 */
+.name7 {
+  /* border: 3px solid firebrick; */
+  justify-content: space-between;
+  display: flex;
+}
+.name7 select,
+.name7 input{
+  width: 30%;
+  height: 50px;
+}
