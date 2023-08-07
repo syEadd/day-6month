@@ -327,6 +327,17 @@ $('#veritext').focusout(function(){
   }
 })
 
+////////////
+$('#joinbtn').on('click', function(e){
+  if(idveri && pwveri && pwchkveri && nameveri && bitrhveri && genderveri && phoneveri && addressveri && mailveri) {
+    $('#join-form').submit();
+  } else {
+    e.preventDefault();
+    // 강제 이벤트 발생 시키는 메서드 trigger
+    $('input').trigger('focusout');
+  }
+})
+
 
 
 
@@ -409,4 +420,6 @@ $('#joinbtn').on('click', function(e){
     $('input').trigger('focusout');
   }
 })
+
+
 
