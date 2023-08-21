@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8월 자바스크립트</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.box-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box-item {
+  width: calc((100% - 30px) / 3);
+  border: 1px solid #888;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box-item img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.sho-info {
+  padding: 20px;
+}
+
+.sho-info p {
+  margin-top: 10px;
+}
+</style>
+<body>
+  <div class="wrapper">
+    <div class="box-list">
+      <!-- <div class="box-item">
+        <img src="" alt="">
+        <div class="sho-info">
+          <h2></h2>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="box-item">
+        <img src="" alt="">
+        <div class="sho-info">
+          <h2></h2>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="box-item">
+        <img src="" alt="">
+        <div class="sho-info">
+          <h2></h2>
+          <p></p>
+          <p></p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <script>
+let products = [
+  {
+    img : 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4b2f5e8a-8638-4fa5-81fa-e714024efb39/%ED%85%8C%ED%81%AC-%ED%97%A4%EB%9D%BC-%EC%97%AC%EC%84%B1-%EC%8B%A0%EB%B0%9C-5psTyMig.png',
+    title : '나이키 테크 헤라',
+    price : '103,200 원',
+    size : ['230', '235', '240', '245']
+  },
+  {
+    img : 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/af53d53d-561f-450a-a483-70a7ceee380f/%EB%8D%A9%ED%81%AC-%EB%A1%9C%EC%9A%B0-%EC%97%AC%EC%84%B1-%EC%8B%A0%EB%B0%9C-ZuZyA5Sj.png',
+    title : '나이키 덩크 로우',
+    price : '139,000 원',
+    size : ['220', '230', '240', '250']
+  },
+  {
+    img : 'https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/d062f057-ab59-4723-acef-e59176868673/%EC%9A%B0%EB%A8%BC%EC%8A%A4-%EC%BD%94%EB%A5%B4%ED%85%8C%EC%A6%88-midnight-navy-dz2795-400-%EC%B6%9C%EC%8B%9C%EC%9D%BC.jpg',
+    title : '우먼스 코르테즈 Midnight Navy',
+    price : '119,000 원',
+    size : ['225', '230', '235', '240', '245']
+  },
+]
+
+
+
+//     let h1Tag = document.createElement('p');
+//     h1Tag.innerHTML = '안녕하세요'
+//     h1Tag.classList.add('hi')
+//     document.querySelector('.box-list').appendChild(h1Tag);
+//     // .appendChild 자식 요소
+    
+//     // .box-list안에 p태그로 생성
+//   let pTag = document.createElement('p');
+//   pTag.innerHTML = 'createElement로 p 태그 생성';
+//   document.querySelector('.box-list').appendChild(pTag);
+
+
+
+
+ let boxList = document.querySelector('.box-list');
+
+products.forEach(function(item){
+  let boxItem = document.createElement('div');
+  boxItem.classList.add('box-item');
+  boxList.appendChild(boxItem);
+
+  let boxImg = document.createElement('img');
+  boxImg.src = item.img;
+  boxImg.alt = item.title;
+  boxItem.appendChild(boxImg);
+
+  let shoInfo = document.createElement('div');
+  shoInfo.classList.add('sho-info');
+  boxItem.appendChild(shoInfo);
+
+  let boxTitle = document.createElement('h2');
+  boxTitle.innerHTML = item.title;
+  shoInfo.appendChild(boxTitle);
+})
+ 
+
+
+  </script>
+</body>
+</html>
